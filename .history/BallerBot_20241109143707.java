@@ -3,6 +3,5 @@ public class BallerBot{
         System.out.println("Hello World!");
         System.out.println("Hoh hoh hoh");
         
-        System.out.println("GOAT MILK");
     }
 }
