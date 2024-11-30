@@ -1,5 +1,5 @@
-import Subsystems.ConfettiLauncher;
-import Subsystems.Drivetrain;
+import Subsystems.*;
+import Commands.*;
 
 public class BallerBot{
     private static ConfettiLauncher confettiLauncher=new ConfettiLauncher();
@@ -7,5 +7,13 @@ public class BallerBot{
     public static void main(String[]args){
         confettiLauncher.ConfettiLaunched();
         Swerve.giveDirection();
+
+        shooterCMD shotLauncher= new shooterCMD();
+        shotLauncher.launcher();
+
+
+
+
+
     }
 }
