@@ -1,4 +1,9 @@
+import Subsystems.ConfettiLauncher;
+import Subsystems.Drivetrain;
+
 public class BallerBot{
+    private static ConfettiLauncher confettiLauncher=new ConfettiLauncher();
+    private static Drivetrain Swerve = new Drivetrain();
     public static void main(String[]args){
       // We're no strangers to love
       // You know the rules and so do I
@@ -59,6 +64,7 @@ public class BallerBot{
         } catch(Exception e) {
 
         }
-
+        confettiLauncher.ConfettiLaunched();
+        Swerve.giveDirection();
     }
 }
